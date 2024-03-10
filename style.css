@@ -1,0 +1,152 @@
+/* 
+# Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+body {
+	display: grid;
+	margin: 0px;
+	background-color: #f7f7f7;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-items: center;
+	gap: 60px;
+	margin-top: 60px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+	margin: 0px;
+}
+
+.menu {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu a {
+	background: white;
+	padding: 10px 30px;
+	font-size: 16px;
+	border-radius: 4px;
+	color: black;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1000px;
+}
+
+.infos {
+	display: grid;
+	background-color: white;
+	align-content: center;
+	gap: 20px;
+	justify-items: end;
+	padding: 40px;
+	grid-area: 1;
+	position: relative;
+	text-align: right;
+}
+
+.detalhe {
+	width: 60px;
+	height: 4px;
+	background: #ee2211;
+	position: absolute;
+	right: -30px;
+	margin-top: 30px;
+}
+
+.botao {
+	background-color: #ee2211;
+	padding: 16px 30px;
+	font-size: 20px;
+	border-radius: 4px;
+	color: #f7f7f7;
+	text-align: right;
+	width: fit-content;
+	text-transform: uppercase;
+}
+
+.vantagens {
+	background-color: #f7f7f7;
+	justify-content: right;
+	align-content: right;
+	padding: 40px;
+	align-self: center;
+	place-items: end;
+	text-align: right;
+}
+
+.text-decor {
+	font-weight: bold;
+	color: #c6c6c6;
+	font-size: 60px;
+	align-self: center;
+}
+
+.topicos {
+	padding: 40px;
+	background-color: white;
+	align-content: left;
+	place-items: start;
+	text-align: left;
+}
+
+.topicos-item {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 10px 20px;
+	align-items: center;
+	padding: 20px;
+}
+
+.topicos-item p {
+	grid-column: 2;
+	font-weight: normal;
+}
+
+.subtitulo {
+	font-size: 18px;
+}
+
+.descricao-topicos {
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.rodape {
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	padding: 40px;
+	box-sizing: border-box;
+}
